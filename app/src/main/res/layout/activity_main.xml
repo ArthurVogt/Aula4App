@@ -4,80 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".MainActivity">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CONTATOS"
         android:id="@+id/bContatos"
-        style="@style/Button"/>
-
-    <Button
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="WEB"
+        android:text="CONTATOS" />
+
+    <Button
         android:id="@+id/bWeb"
-        style="@style/Button"/>
-
-    <Button
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CALL"
+        android:text="WEB" />
+
+    <Button
         android:id="@+id/bCall"
-        style="@style/Button"/>
-
-    <Button
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MAPS1"
+        android:text="CALL" />
+
+    <Button
         android:id="@+id/bMaps1"
-        style="@style/Button"/>
-
-    <Button
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MAPS2"
+        android:text="MAPS1" />
+
+    <Button
         android:id="@+id/bMaps2"
-        style="@style/Button"/>
-
-    <Button
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MAPS3"
+        android:text="MAPS2" />
+
+    <Button
         android:id="@+id/bMaps3"
-        style="@style/Button"/>
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAPS3" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="PIC ITI"
         android:id="@+id/bPicIti"
-        style="@style/Button"/>
-
-    <TextView
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contato"
-        style="@style/TextView"/>
+        android:text="PIC ITI" />
 
     <TextView
+        style="@style/TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nome:"
-        style="@style/TextView"/>
+        android:text="Contato" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Telefone:"
-        style="@style/TextView"/>
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Nome:" />
+
+        <TextView
+            android:id="@+id/tvNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Telefone:" />
+
+        <TextView
+            android:id="@+id/tvTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
     <ImageView
+        android:id="@+id/ivImagem"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ivImagem"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
